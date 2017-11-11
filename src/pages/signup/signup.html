@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        
+      <ion-item>
+        <ion-input type="text" placeholder="First Name" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Last Name" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Email" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="username" ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input type="password" placeholder="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Repeat password"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+
+    <button ion-button full color="secondary">Sign Up</button>
+    <button ion-button full  (click)="Login()" >Log in</button>
+</ion-content>

@@ -1,0 +1,30 @@
+
+
+<ion-header align-title=”center”> 
+
+  <ion-navbar>
+      <img class="logo" src="assets/imgs/ulogo.png" alt="">
+    <ion-title>
+      Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="login">
+    <ion-list>
+        
+      <ion-item>
+        <ion-input type="text" placeholder="username" ></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-input type="password" placeholder="password"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+
+    <button ion-button full>Log in</button>
+    <button ion-button full color="secondary" (click)="signUp()" >Sign Up</button>
+
+</ion-content>
+    
