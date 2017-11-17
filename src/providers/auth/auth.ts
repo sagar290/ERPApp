@@ -1,17 +1,31 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage';
+import { Console } from '@angular/core/src/console';
 
-/*
-  Generated class for the AuthProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class AuthProvider {
+  users: any;
+  public token: any;
+  constructor(private storage: Storage) {
+    this.users = [
+      {
+        empID: '101',
+        firstName: 'Sagar',
+        lastName: 'Dash',
+        bio: 'Student',
+        region: 'Dhaka',
+        pass: '123456789'   
+      }
+    ];
+  }
 
-  constructor(public http: HttpClient) {
-    console.log('Hello AuthProvider Provider');
+  login(credentials){
+
+    if (credentials = this.users) {
+      this.storage.set('token', '101');
+    }
+    
   }
 
 }

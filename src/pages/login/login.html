@@ -17,14 +17,14 @@
       <hr>
 
     <div class="input">
-        <ion-input type="text"  id="EmployeeID" ></ion-input>
+        <ion-input [(ngModel)]="empID" type="text"  id="EmployeeID" ></ion-input>
         <label for="EmployeeID"> Employee ID </label>
-        <ion-input type="password" id="Password"></ion-input>
+        <ion-input [(ngModel)]="pass" type="password" id="Password"></ion-input>
         <label for="Password">Password</label>
 
     </div>
       
-    <ion-buttons end>
+    <ion-buttons (click)="logIn()" end>
       <button color="pink" round large ion-button>
           Log in
       </button>

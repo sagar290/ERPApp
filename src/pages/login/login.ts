@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
+import { AuthProvider } from '../../providers/auth/auth';
+import { Storage } from '@ionic/storage';
+
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -9,10 +13,34 @@ import { SignupPage } from '../signup/signup';
 })
 export class LoginPage {
   title: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.title = navParams.data.toUpperCase();
-    console.log(this.title);
+  empID: string;
+  pass: string;
+  loading: any;
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    public auth: AuthProvider,
+    private storage: Storage) {
+    this.title = navParams.data;
+    // console.log(this.title);
     
+  }
+
+  ionViewDidLoad() {
+    this.storage.get('token').then((val) => {
+      if (val !== null) {
+        this.navCtrl.setRoot(HomePage, val);
+        // console.log(val);
+      }
+    });
+  }
+
+  logIn() {
+    let credentials = {
+        empID: this.empID,
+        pass: this.pass
+    };
+    this.auth.login(credentials);
+    this.navCtrl.setRoot(HomePage);
   }
 
 
