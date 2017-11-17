@@ -8,13 +8,13 @@ import { SignupPage } from '../signup/signup';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-
+  title: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.title = navParams.data.toUpperCase();
+    console.log(this.title);
+    
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
 
   signUp() {
     this.navCtrl.push(SignupPage);

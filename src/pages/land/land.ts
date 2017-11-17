@@ -13,7 +13,7 @@ export class LandPage {
   }
 
   stm() {
-    this.parms = 'stm';
+    this.parms = 's/tm';
     this.navCtrl.push(LoginPage, this.parms);
   }
 

@@ -8,3 +8,34 @@
     margin: 0 auto;
     float: right;
 }
+
+.header-big toolbar-content{
+    height: 149px;
+    background: #67BCDB;
+    color: white;
+}
+.header-big toolbar-background {
+    background: #67BCDB;
+}
+
+.background-page {
+    width: 100%;
+}
+
+.input ion-input {
+    border: 1px solid rgb(113, 113, 211);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.input label {
+    margin: 10px;
+    padding-bottom: 10px;
+    color: #488AFF;
+}
+
+.input-cover{
+    display: none;
+}

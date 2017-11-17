@@ -2,29 +2,33 @@
 
 <ion-header align-title=”center”> 
 
-  <ion-navbar>
-      <img class="logo" src="assets/imgs/ulogo.png" alt="">
+  <ion-navbar color="primary">
     <ion-title>
-      Login</ion-title>
+      Login
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding class="login">
-    <ion-list>
-        
-      <ion-item>
-        <ion-input type="text" placeholder="username" ></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-input type="password" placeholder="password"></ion-input>
-      </ion-item>
-    
-    </ion-list>
+<ion-content padding center  class="login">
 
-    <button ion-button full>Log in</button>
-    <button ion-button full color="secondary" (click)="signUp()" >Sign Up</button>
+  <h1 style="color:#488AFF;" > {{ title }} Training and
+      Assessment Dashboard</h1>
+      <hr>
+
+    <div class="input">
+        <ion-input type="text"  id="EmployeeID" ></ion-input>
+        <label for="EmployeeID"> Employee ID </label>
+        <ion-input type="password" id="Password"></ion-input>
+        <label for="Password">Password</label>
+
+    </div>
+      
+    <ion-buttons end>
+      <button color="pink" round large ion-button>
+          Log in
+      </button>
+    </ion-buttons>
 
 </ion-content>
     

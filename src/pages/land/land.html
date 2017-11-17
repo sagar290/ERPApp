@@ -1,20 +1,22 @@
+<ion-header class="header-big" > 
 
-<ion-content padding class="card-background-page">
-    <ion-card>
-      <ion-card-content>
-          <img class="logo-medum" src="assets/imgs/ulogo.png" alt="">
-      </ion-card-content>
-    </ion-card>
-  <ion-card (click)="dff()" >
-    <img src="assets/land/DFF.jpg"/>
-    <div class="card-title">
-      <h1>DFF</h1> 
-    </div>
-  </ion-card>
-  <ion-card (click)="stm()"> 
-    <img src="assets/land/STM.jpg"/>
-    <div class="card-title">
-      <h1>S/TM</h1> 
-    </div>
-  </ion-card>
+</ion-header>
+
+
+<ion-content padding center text-center>
+  
+  <div class="background-page">
+    <img src="assets/imgs/ulogo.png" alt="">
+  </div>
+  
+  <button color="pink" ion-button full round large icon-right (click)="dff()" >
+      DFF
+  </button>
+
+  <button color="primary" ion-button full round large icon-right (click)="stm()"  >
+      S/TM
+  </button>
+
+
+
 </ion-content>
