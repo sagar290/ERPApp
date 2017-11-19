@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { DashBoardPage } from '../dash-board/dash-board';
+import { TrainingPage } from '../training/training';
+import { ArchivePage } from '../archive/archive';
 
 @IonicPage()
 @Component({
@@ -19,7 +15,19 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    
+  }
+
+  dashBoard() {
+    this.navCtrl.push(DashBoardPage);
+  }
+
+  training() {
+    this.navCtrl.push(TrainingPage);
+  }
+
+  archive() {
+    this.navCtrl.push(ArchivePage);
   }
 
 }

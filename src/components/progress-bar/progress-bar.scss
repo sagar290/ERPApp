@@ -1,0 +1,26 @@
+
+progress-bar {
+    
+        .progress-outer {
+            width: 100%;
+            margin: 0px 0%;
+            padding: 0px;
+            text-align: center;
+            background-color: #f4f4f4;
+            border: 1px solid #dcdcdc;
+            color: #fff;
+            border-radius: 20px;
+        }
+    
+        .progress-inner {
+            min-width: 15%;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0px;
+            border-radius: 20px;
+            background-color: map-get($colors, primary);
+            font-size: 13px;
+        }
+    
+    }
+

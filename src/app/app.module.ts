@@ -4,15 +4,20 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
-import { HttpClient } from '@angular/common/http';
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { LandPage } from '../pages/land/land';
+import { DashBoardPage } from '../pages/dash-board/dash-board';
+import { ContentPage } from '../pages/content/content';
+import { TrainingPage } from '../pages/training/training';
+import { ArchivePage } from '../pages/archive/archive';
 
 import { AuthProvider } from '../providers/auth/auth';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { AuthProvider } from '../providers/auth/auth';
     HomePage,
     LandPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    DashBoardPage,
+    ContentPage,
+    ArchivePage,
+    TrainingPage,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +43,11 @@ import { AuthProvider } from '../providers/auth/auth';
     HomePage,
     LandPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    DashBoardPage,
+    ContentPage,
+    ArchivePage,
+    TrainingPage
   ],
   providers: [
     StatusBar,
@@ -41,7 +55,6 @@ import { AuthProvider } from '../providers/auth/auth';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     IonicStorageModule,
-    HttpClient
   ]
 })
 export class AppModule {}

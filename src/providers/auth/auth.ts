@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { Console } from '@angular/core/src/console';
+// import { Console } from '@angular/core/src/console';
 
 @Injectable()
 export class AuthProvider {
@@ -23,8 +23,13 @@ export class AuthProvider {
   login(credentials){
 
     if (credentials = this.users) {
+      console.log(credentials);
       this.storage.set('token', '101');
+
+    }else {
+      console.log(credentials);
     }
+
     
   }
 

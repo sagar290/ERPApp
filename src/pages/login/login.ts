@@ -5,6 +5,7 @@ import { AuthProvider } from '../../providers/auth/auth';
 import { Storage } from '@ionic/storage';
 
 import { HomePage } from '../home/home';
+import { LandPage } from '../land/land';
 
 @IonicPage()
 @Component({
@@ -40,7 +41,7 @@ export class LoginPage {
         pass: this.pass
     };
     this.auth.login(credentials);
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.push(LandPage);
   }
 
 

@@ -1,0 +1,59 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>DashBoard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <!-- Segment in content -->
+  <ion-segment [(ngModel)]="dashBoard" color="primary" >
+    <ion-segment-button value="innovation">
+      Innovation
+    </ion-segment-button>
+    <ion-segment-button value="lr">
+      Launch/Relaunch
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [(ngSwitch)]="dashBoard" >
+    <ion-list *ngSwitchCase="'innovation'" >
+      <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://api.adorable.io/avatars/121/abott@adorable.png">
+          </ion-avatar>
+          <h2>Hayao Miyazaki 1</h2>
+          <p>My Neighbor Totoro</p>
+          <button ion-button clear item-end>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-item>
+
+      </ion-list>
+    </ion-list>
+    <ion-list *ngSwitchCase="'lr'" >
+      <ion-list >
+        <div *ngFor="let item of items  let i = index "  [attr.data-index]="i">
+          <ion-item (click)="content(item)" >
+              <ion-avatar item-start>
+                <img src="{{item.thumbnail}}">
+              </ion-avatar>
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.region }}</p>
+              <button ion-button clear item-end>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </ion-item>
+        </div>
+        
+        
+
+      </ion-list>
+    </ion-list>
+  </div>
+
+  
+</ion-content>
