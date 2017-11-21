@@ -20,6 +20,10 @@ import { AuthProvider } from '../providers/auth/auth';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { TrainingContentPage } from '../pages/training-content/training-content';
 import { QuizPage } from '../pages/quiz/quiz';
+import { DataProvider } from '../providers/data/data';
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { HttpModule, Http } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,12 +38,15 @@ import { QuizPage } from '../pages/quiz/quiz';
     TrainingPage,
     ProgressBarComponent,
     TrainingContentPage,
-    QuizPage
+    QuizPage,
+    FlashCardComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    HttpModule,
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -62,6 +69,11 @@ import { QuizPage } from '../pages/quiz/quiz';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     IonicStorageModule,
+    DataProvider,
+    HttpModule,
+    Http,
+    HttpClientModule,
+    
   ]
 })
 export class AppModule {}
