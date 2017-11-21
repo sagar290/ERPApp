@@ -18,6 +18,8 @@ import { ArchivePage } from '../pages/archive/archive';
 
 import { AuthProvider } from '../providers/auth/auth';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
+import { TrainingContentPage } from '../pages/training-content/training-content';
+import { QuizPage } from '../pages/quiz/quiz';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     ContentPage,
     ArchivePage,
     TrainingPage,
-    ProgressBarComponent
+    ProgressBarComponent,
+    TrainingContentPage,
+    QuizPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,10 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     DashBoardPage,
     ContentPage,
     ArchivePage,
-    TrainingPage
+    TrainingPage,
+    TrainingContentPage,
+    QuizPage
+    
   ],
   providers: [
     StatusBar,

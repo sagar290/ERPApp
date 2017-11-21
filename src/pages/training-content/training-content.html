@@ -1,0 +1,58 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Training Content</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<div>
+  <div class="video-container">
+      <iframe [src]="vId" frameborder="0" width="560" height="315"></iframe>
+  </div>
+  <!-- Segment in content -->
+  <ion-segment [(ngModel)]="training" color="primary" >
+      <ion-segment-button value="videos">
+          Videos
+      </ion-segment-button>
+      <ion-segment-button value="quizzes">
+          Quizzes
+      </ion-segment-button>
+    </ion-segment>
+</div>
+<div [(ngSwitch)]="training" >
+  <ion-list *ngSwitchCase="'videos'" >
+    <ion-list>
+      <div *ngFor="let lesson of lessons  let i = index "  [attr.data-index]="i" >
+        <ion-item id="liked" (click)="videoId(lesson.url, $event)" >
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/play.png">
+          </ion-thumbnail>
+          <h2> {{ lesson.title }} </h2>
+        </ion-item>
+      </div>
+      
+      
+    </ion-list>
+  </ion-list>
+  <ion-list *ngSwitchCase="'quizzes'" >
+      <ion-list>
+        <div *ngFor="let quiz of quizlist  let i = index "  [attr.data-index]="i" >
+          <ion-item (click)="goQuiz(quiz)" >
+            <ion-thumbnail item-start>
+              <img src="assets/imgs/play.png">
+            </ion-thumbnail>
+            <h2> {{ quiz.title }} </h2>
+          </ion-item>
+        </div>
+        
+        
+      </ion-list>
+    </ion-list>
+ 
+</div>
+
+</ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TrainingContentPage } from '../training-content/training-content';
 
 /**
  * Generated class for the TrainingPage page.
@@ -21,6 +22,10 @@ export class TrainingPage {
 
   ionViewDidLoad() {
     this.loadProgress = 50;
+  }
+
+  TrainingPage() {
+    this.navCtrl.push(TrainingContentPage);
   }
 
 }

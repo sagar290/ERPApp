@@ -14,5 +14,21 @@
 
 
 <ion-content padding>
+    <ion-list >
+        <div *ngFor="let item of items  let i = index "  [attr.data-index]="i">
+          <ion-item (click)="content(item)" >
+              <ion-avatar item-start>
+                <img src="{{item.thumbnail}}">
+              </ion-avatar>
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.region }}</p>
+              <button ion-button clear item-end>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </ion-item>
+        </div>
+        
+        
 
+      </ion-list>
 </ion-content>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContentPage } from '../content/content';
-import { Content } from "../../model/content.model"
+import { Content } from "../../model/content.model";
 
 @IonicPage()
 @Component({
