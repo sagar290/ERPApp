@@ -24,7 +24,7 @@ import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpModule, Http } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NavController } from 'ionic-angular';
 @NgModule({
   declarations: [
     MyApp,
@@ -46,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [

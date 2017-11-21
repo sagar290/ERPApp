@@ -43,7 +43,7 @@
         <div *ngFor="let quiz of quizlist  let i = index "  [attr.data-index]="i" >
           <ion-item (click)="goQuiz(quiz)" >
             <ion-thumbnail item-start>
-              <img src="assets/imgs/play.png">
+              <img src="assets/imgs/quiz.png">
             </ion-thumbnail>
             <h2> {{ quiz.title }} </h2>
           </ion-item>

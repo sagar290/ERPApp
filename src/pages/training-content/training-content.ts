@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QuizPage } from '../quiz/quiz';
+// import { DataProvider } from '../../providers/data/data';
 
 @IonicPage()
 @Component({
@@ -16,6 +17,9 @@ export class TrainingContentPage {
   videoUrl: SafeResourceUrl;
   quizlist: any;
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
+    // this.data.load().then((data) => {
+    //   console.log(data);
+    // });
     this.training = 'videos';
     this.vId = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MYt6P5eomRw');
 

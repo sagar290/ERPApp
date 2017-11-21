@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
-import { DataProvider } from '../../providers/data/data';
-
+// import { DataProvider } from '../../providers/data/data';
+// import { Http } from '@angular/http';
 
 @IonicPage()
 @Component({
@@ -17,27 +17,69 @@ export class QuizPage {
   
      slideOptions: any;
      questions: any;
+     data: any;
   
-     constructor(public navCtrl: NavController, public dataService: DataProvider) {
+     constructor(public navCtrl: NavController) {
 
-      this.slides.lockSwipes(true);
+    //   this.slides.lockSwipes(true);
       
-             this.dataService.load().then((data) => {
-      
-                 data.map((question) => {
-      
-                     let originalOrder = question.answers;
-                     question.answers = this.randomizeAnswers(originalOrder);
-                     return question;
-      
-                 });    
-      
-                 this.questions = data;
-      
-             });
+        this.questions = [
+            
+            {
+                "flashCardFront": "<img src='assets/imgs/helicopter.png' />",
+                "flashCardBack": "Helicopter",
+                "flashCardFlipped": false,
+                "questionText": "What is this?",
+                "answers": [
+                    {"answer": "Helicopter", "correct": true, "selected": false},
+                    {"answer": "Plane", "correct": false, "selected": false},
+                    {"answer": "Truck", "correct": false, "selected": false}
+                ]
+            },
+            {
+                "flashCardFront": "<img src='assets/imgs/plane.png' />",
+                "flashCardBack": "Plane",
+                "flashCardFlipped": false,
+                "questionText": "What is this?",
+                "answers": [
+                    {"answer": "Helicopter", "correct": false, "selected": false},
+                    {"answer": "Plane", "correct": true, "selected": false},
+                    {"answer": "Truck", "correct": false, "selected": false}
+                ]
+            },
+            {
+                "flashCardFront": "<img src='assets/imgs/truck.png' />",
+                "flashCardBack": "Truck",
+                "flashCardFlipped": false,
+                "questionText": "What is this?",
+                "answers": [
+                    {"answer": "Helicopter", "correct": false, "selected": false},
+                    {"answer": "Plane", "correct": false, "selected": false},
+                    {"answer": "Truck", "correct": true, "selected": false}
+                ]
+            }
+            
+        ]
      }
-  
 
+     ionViewDidLoad() { this.slides.lockSwipes(true) }
+  
+    //  load(){
+        
+    //            if(this.data){
+    //                return Promise.resolve(this.data);
+    //            }
+        
+    //            return new Promise(resolve => {
+        
+    //                this.http.get('assets/data/questions.json').map(res => res.json()).subscribe(data => {
+    //                    this.data = data.questions;
+    //                    resolve(this.data);
+    //                });
+        
+    //            });
+        
+    //        }
   
      nextSlide(){
          this.slides.lockSwipes(false);

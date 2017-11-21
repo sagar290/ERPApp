@@ -2,7 +2,7 @@
     "questions": [
  
         {
-            "flashCardFront": "<img src='assets/images/helicopter.png' />",
+            "flashCardFront": "<img src='assets/imgs/helicopter.png' />",
             "flashCardBack": "Helicopter",
             "flashCardFlipped": false,
             "questionText": "What is this?",
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "flashCardFront": "<img src='assets/images/plane.png' />",
+            "flashCardFront": "<img src='assets/imgs/plane.png' />",
             "flashCardBack": "Plane",
             "flashCardFlipped": false,
             "questionText": "What is this?",
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "flashCardFront": "<img src='assets/images/truck.png' />",
+            "flashCardFront": "<img src='assets/imgs/truck.png' />",
             "flashCardBack": "Truck",
             "flashCardFlipped": false,
             "questionText": "What is this?",
