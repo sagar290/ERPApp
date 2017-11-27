@@ -3,8 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DashBoardPage } from '../dash-board/dash-board';
 import { TrainingPage } from '../training/training';
 import { ArchivePage } from '../archive/archive';
-import { Storage } from '@ionic/storage/dist/storage';
-import { LandPage } from '../land/land';
+
 
 @IonicPage()
 @Component({
@@ -13,7 +12,7 @@ import { LandPage } from '../land/land';
 })
 export class HomePage {
 
-  constructor(private storage: Storage, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {

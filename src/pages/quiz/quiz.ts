@@ -18,6 +18,7 @@ export class QuizPage {
      slideOptions: any;
      questions: any;
      data: any;
+     answere: any; 
   
      constructor(public navCtrl: NavController) {
 
@@ -89,12 +90,14 @@ export class QuizPage {
   
      selectAnswer(answer, question){
   
-         this.hasAnswered = true;
-         answer.selected = true;
-         question.flashCardFlipped = true;
-  
-         if(answer.correct){
+        this.hasAnswered = true;
+        answer.selected = true;
+        question.flashCardFlipped = true;
+         if(answer.correct == true){
+             this.answere = 'Correct';
              this.score++;
+         }else {
+            this.answere = 'Wrong';
          }
   
          setTimeout(() => {
@@ -104,7 +107,7 @@ export class QuizPage {
              question.flashCardFlipped = false;
          }, 3000);
      }
-  
+   
      randomizeAnswers(rawAnswers: any[]): any[] {
   
          for (let i = rawAnswers.length - 1; i > 0; i--) {

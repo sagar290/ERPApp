@@ -9,7 +9,8 @@
            ion-item {
                margin-bottom: 5px;
                font-size: 1.2em;
-               background-color: map-get($colors, primary);
+               border: 1px solid blue($color: #0c4407)
+            //    background-color: map-get($colors, primary);
            }
     
            flash-card {

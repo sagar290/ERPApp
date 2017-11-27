@@ -21,18 +21,18 @@
   
              <flash-card [isFlipped]="question.flashCardFlipped">
                  <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
-                 <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+                 <div class="flash-card-back" [innerHTML]="answere"></div>
              </flash-card>
   
              <h3>{{question.questionText}}</h3>
   
-             <ion-list no-lines radio-group>
+             <ion-list  radio-group>
   
                  <ion-item *ngFor="let answer of question.answers; let i = index;">
   
                      <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
                      <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
-  
+   
                  </ion-item>
   
              </ion-list>
