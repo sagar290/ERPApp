@@ -24,6 +24,7 @@ import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpModule, Http } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { SanitizePipe } from '../pipes/sanitize/sanitize';
 // import { NavController } from 'ionic-angular';
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProgressBarComponent,
     TrainingContentPage,
     QuizPage,
-    FlashCardComponent
+    FlashCardComponent,
+    SanitizePipe
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     IonicStorageModule.forRoot(),
     HttpModule,
     HttpClientModule,
+    
     
   ],
   bootstrap: [IonicApp],

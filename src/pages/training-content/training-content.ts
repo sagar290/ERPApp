@@ -21,7 +21,7 @@ export class TrainingContentPage {
     //   console.log(data);
     // });
     this.training = 'videos';
-    this.vId = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MYt6P5eomRw');
+    this.vId = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/xMrjiGDefXY');
 
   }
 
@@ -29,38 +29,8 @@ export class TrainingContentPage {
     this.lessons = [
       {
         title: 'Lesson 1',
-        url: 'https://www.youtube.com/embed/MYt6P5eomRw',
-        urlid: 'MYt6P5eomRw',
-        desc: ''
-      },
-      {
-        title: 'Lesson 2',
-        url: 'https://www.youtube.com/embed/M-XsFK-cZSg',
-        urlid: 'M-XsFK-cZSg',
-        desc: ''
-      },
-      {
-        title: 'Lesson 3',
-        url: 'https://www.youtube.com/embed/GaugKUhQHlI',
-        urlid: 'GaugKUhQHlI',
-        desc: ''
-      },
-      {
-        title: 'Lesson 4',
-        url: 'https://www.youtube.com/embed/ixwIWxhIrgg',
-        urlid: 'ixwIWxhIrgg',
-        desc: ''
-      },
-      {
-        title: 'Lesson 5',
-        url: 'https://www.youtube.com/embed/CBoX1FbNSI',
-        urlid: 'CBoX1FbNSI',
-        desc: ''
-      },
-      {
-        title: 'Lesson 6',
-        url: 'https://www.youtube.com/embed/IZYaPXNXJbw',
-        urlid: 'IZYaPXNXJbw',
+        url: 'https://www.youtube.com/embed/xMrjiGDefXY',
+        urlid: 'xMrjiGDefXY',
         desc: ''
       },
     ];

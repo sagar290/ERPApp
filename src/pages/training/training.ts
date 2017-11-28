@@ -2,12 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TrainingContentPage } from '../training-content/training-content';
 
-/**
- * Generated class for the TrainingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,12 +10,29 @@ import { TrainingContentPage } from '../training-content/training-content';
 })
 export class TrainingPage {
   loadProgress: number;
-
+  items: any;
+  type: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.type = navParams.data;
   }
 
   ionViewDidLoad() {
     this.loadProgress = 50;
+    if (this.type == "DFF") {
+      this.items = [
+        {
+          title: 'Basic Merchandising',
+          desc: 'WHAT IS MERCHANDISING Main video',
+          video: '',
+          region: '',
+          date: '22 Dec 2017',
+          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+        }
+      ];
+    } else {
+      
+    }
+    
   }
 
   TrainingPage() {

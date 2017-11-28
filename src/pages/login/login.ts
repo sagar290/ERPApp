@@ -22,7 +22,7 @@ export class LoginPage {
     public auth: AuthProvider,
     private storage: Storage) {
     this.title = navParams.data;
-    // console.log(this.title);
+
     
   }
 
@@ -40,7 +40,7 @@ export class LoginPage {
         empID: this.empID,
         pass: this.pass
     };
-    this.auth.login(credentials);
+    this.auth.login(credentials, this.title);
     this.navCtrl.push(LandPage);
   }
 

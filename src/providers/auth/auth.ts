@@ -20,11 +20,11 @@ export class AuthProvider {
     ];
   }
 
-  login(credentials){
+  login(credentials, type){
 
     if (credentials = this.users) {
-      console.log(credentials);
-      this.storage.set('token', '101');
+      console.log(type);
+      this.storage.set('token', type);
 
     }else {
       console.log(credentials);
