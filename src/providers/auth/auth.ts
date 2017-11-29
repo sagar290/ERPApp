@@ -21,13 +21,13 @@ export class AuthProvider {
   }
 
   login(credentials, type){
-
-    if (credentials = this.users) {
+    
+    if (credentials.empID == this.users[0].empID && credentials.pass ==  this.users[0].pass) {
       console.log(type);
       this.storage.set('token', type);
 
     }else {
-      console.log(credentials);
+      console.log(this.users[0].empID);
     }
 
     
