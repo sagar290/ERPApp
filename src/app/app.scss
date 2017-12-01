@@ -2,7 +2,9 @@
     width: 80px;
     margin: 0 auto;
 }
-
+.visible {
+    display: none;
+}
 .logo {
     width: 30px;
     margin: 0 auto;
@@ -39,6 +41,49 @@
 .input-cover{
     display: none;
 }
+
+.navButton {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.navButton button{
+    display: inline;
+    margin: 0 auto;
+}
+
+.navButton button.menu {
+    order: 1;
+}
+.navButton button.db {
+    order: 2;
+}
+.navButton button.logo {
+    order: 3;
+}
+.navButton button.training {
+    order: 4;
+}
+.navButton button.archive {
+    order: 5;
+}
+
+.toolbar-title, .back-button {
+    color: white;
+}
+.toolbar-background {
+    background-color: #0f7ec2;
+    color: white;
+}
+
+
+// .content-md {
+//     background: url('../assets/imgs/bg.jpg');
+//     position: center;
+//     background-size: cover;
+// }
+
 
 // ion-content {
 //     background: url('assets/imgs/bg.jpg');

@@ -2,7 +2,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>DashBoard</ion-title>
+      <ion-buttons class="navButton">
+        <button  class="menu" ion-button icon-only menuToggle>
+            <ion-icon style="color: white;" name="menu"></ion-icon>
+        </button>
+        <button  class="db" ion-button icon-only >
+            <img style="width:30px;" src="assets/imgs/Training-Small.png" alt="">
+        </button>
+        <button (click)="home()" class="logo" ion-button icon-only>
+          <img style="width:30px;"  src="assets/imgs/UBL-Logo.png" alt="">
+        </button>
+        <button (click)="training()" class="training" ion-button icon-only >
+            <img style="width:30px;" src="assets/imgs/Dashboard-Small.png" alt="">
+        </button>
+        <button (click)="archive()" class="archive" ion-button icon-only >
+            <img style="width:30px;" src="assets/imgs/Announcement-Small.png" alt="">
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>

@@ -13,7 +13,9 @@ import { Storage } from '@ionic/storage';
 })
 export class HomePage {
   token: any;
+  isLogIn: boolean;
   constructor(public storage: Storage,public navCtrl: NavController, public navParams: NavParams) {
+    this.isLogIn = true;
   }
 
   ionViewDidLoad() {

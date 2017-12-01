@@ -6,6 +6,7 @@ import { Storage } from '@ionic/storage';
 
 import { HomePage } from '../home/home';
 import { LandPage } from '../land/land';
+import { MenuController } from 'ionic-angular/components/app/menu-controller';
 
 @IonicPage()
 @Component({
@@ -17,7 +18,9 @@ export class LoginPage {
   empID: string;
   pass: string;
   loading: any;
-  constructor(public navCtrl: NavController, 
+  isLogIn: boolean;
+  constructor(private menu: MenuController,
+    public navCtrl: NavController, 
     public navParams: NavParams,
     public auth: AuthProvider,
     private storage: Storage) {
@@ -27,6 +30,7 @@ export class LoginPage {
   }
 
   ionViewDidLoad() {
+    this.menu.swipeEnable(false);
     this.storage.get('token').then((val) => {
       if (val !== null) {
         this.navCtrl.setRoot(HomePage, val);
@@ -41,6 +45,7 @@ export class LoginPage {
         pass: this.pass
     };
     this.auth.login(credentials, this.title);
+    this.isLogIn = true;
     this.navCtrl.push(LandPage);
   }
 

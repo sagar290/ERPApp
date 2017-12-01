@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Content } from "../../model/content.model";
 import { ContentPage } from '../content/content';
+import { DashBoardPage } from '../dash-board/dash-board';
+import { TrainingPage } from '../training/training';
+import { HomePage } from '../home/home';
+// import { ArchivePage } from '../archive/archive';
 
 @IonicPage()
 @Component({
@@ -74,5 +78,19 @@ export class ArchivePage {
   content(item: Content) {
     this.navCtrl.push(ContentPage, {item});
   }
+
+  dashBoard() {
+    this.navCtrl.push(DashBoardPage, this.type);
+  }
+
+  training() {
+    this.navCtrl.push(TrainingPage, this.type);
+  }
+
+  home() {
+    this.navCtrl.setRoot(HomePage);
+  }
+
+
 
 }

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TrainingContentPage } from '../training-content/training-content';
-
+import { DashBoardPage } from '../dash-board/dash-board';
+// import { TrainingPage } from '../training/training';
+import { ArchivePage } from '../archive/archive';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -12,8 +15,10 @@ export class TrainingPage {
   loadProgress: number;
   items: any;
   type: any;
+  token: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.type = navParams.data;
+
   }
 
   ionViewDidLoad() {
@@ -39,4 +44,16 @@ export class TrainingPage {
     this.navCtrl.push(TrainingContentPage);
   }
 
+  dashBoard() {
+    this.navCtrl.push(DashBoardPage, this.type);
+  }
+
+
+
+  archive() {
+    this.navCtrl.push(ArchivePage, this.type);
+  }
+  home() {
+    this.navCtrl.setRoot(HomePage);
+  }
 }
