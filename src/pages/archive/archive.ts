@@ -56,8 +56,9 @@ export class ArchivePage {
       this.items = [
         {
           title: 'Tracking Format',
-          desc: '<a href="assets/TrackingFormat.xls" > TrackingFormat</a>',
+          desc: '',
           video: '',
+          edUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQqdlrXOfcyBaqfvI79jHJu2_uLxphc7dBOuoLLOjiT5pPHspODJeonbZLsWavZVYB7E1yhXZgpG3Z_/pubhtml?widget=true&amp;headers=false/preview',
           region: '',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/taza.jpg'
@@ -65,6 +66,7 @@ export class ArchivePage {
         {
           title: 'Useful Learning Module_Video Link',
           desc: ' hi ',
+          edUrl: '',
           video: 'https://www.youtube.com/embed/qp0HIF3SfI4',
           region: '',
           date: '22 Dec 2017',

@@ -19,8 +19,10 @@
       <ion-card-content>
         <h1>{{ data.title }}</h1>
         <iframe [ngClass]="{'visible': data.video == '' || data.video == null  }" width="100%" height="100%" [src]=" data.video | sanitize" allowfullscreen></iframe>
+        <a [ngClass]="{'visible': data.edUrl == '' || data.video == null  }" href="{{data.edUrl}}" target="_blank"> view Full Screen</a>
+        <iframe [ngClass]="{'visible': data.edUrl == '' || data.video == null  }" width="100%" height="100%" [src]=" data.edUrl | sanitize" allowfullscreen></iframe>
         <p [innerHTML]="data.desc"></p>
       </ion-card-content>
-    
     </ion-card>
+    
 </ion-content>
