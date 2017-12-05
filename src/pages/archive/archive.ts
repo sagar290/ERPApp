@@ -24,8 +24,31 @@ export class ArchivePage {
     if (this.type == 'DFF') {
       this.items = [
         {
+          
+          title: 'Smart Book Gallery',
+          desc: '',
+          video: '',
+          edUrl: 'https://h5p.org/h5p/embed/151930',
+          region: '',
+          date: '22 Dec 2017',
+          thumbnail: 'assets/imgs/taza.jpg'
+        },
+        {
+          
+          title: 'Product Gallery',
+          desc: '',
+          video: '',
+          edUrl: 'https://h5p.org/h5p/embed/151929',
+          region: '',
+          date: '22 Dec 2017',
+          thumbnail: 'assets/imgs/taza.jpg'
+        },
+        {
+          
           title: 'Taaza',
           desc: '<img src="assets/imgs/taza.jpg" /> <br> <img src="assets/imgs/taza2.jpg" />  ',
+          video: '',
+          edUrl: '',
           region: '',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/taza.jpg'
@@ -33,6 +56,8 @@ export class ArchivePage {
         {
           title: 'Vim',
           desc: '<img src="assets/imgs/vim.jpg" />',
+          video: '',
+          edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/vim.jpg'
@@ -40,6 +65,8 @@ export class ArchivePage {
         {
           title: 'Dove',
           desc: '<img src="assets/imgs/dove.jpg" />',
+          video: '',
+          edUrl: '',
           region: '',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/dove.jpg'
@@ -47,6 +74,8 @@ export class ArchivePage {
         {
           title: 'Clear',
           desc: '<img src="assets/imgs/clear.png" />',
+          video: '',
+          edUrl: '',
           region: '',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/clear.png'
@@ -68,6 +97,15 @@ export class ArchivePage {
           desc: ' hi ',
           edUrl: '',
           video: 'https://www.youtube.com/embed/qp0HIF3SfI4',
+          region: '',
+          date: '22 Dec 2017',
+          thumbnail: 'assets/imgs/taza.jpg'
+        },
+        {
+          title: 'Useful Learning Module_Video Link',
+          desc: ' hi ',
+          edUrl: 'https://h5p.org/h5p/embed/151929',
+          video: '',
           region: '',
           date: '22 Dec 2017',
           thumbnail: 'assets/imgs/taza.jpg'

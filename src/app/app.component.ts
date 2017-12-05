@@ -10,7 +10,7 @@ import { Storage } from '@ionic/storage/dist/storage';
 import { DashBoardPage } from '../pages/dash-board/dash-board';
 import { TrainingPage } from '../pages/training/training';
 import { ArchivePage } from '../pages/archive/archive';
-import { HomePage } from '../pages/home/home';
+// import { HomePage } from '../pages/home/home';
 
 
 
@@ -41,7 +41,6 @@ export class MyApp {
     
 
     this.pages = [
-      {title: 'Home', component: HomePage},
       {title: 'Dash Board', component: DashBoardPage},
       {title: 'Trainning', component: TrainingPage},
       {title: 'Archive', component: ArchivePage},
