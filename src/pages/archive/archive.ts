@@ -120,15 +120,15 @@ export class ArchivePage {
   }
 
   dashBoard() {
-    this.navCtrl.push(DashBoardPage, this.type);
+    this.navCtrl.setRoot(DashBoardPage, this.type, {animate: true, direction: 'forward'});
   }
 
   training() {
-    this.navCtrl.push(TrainingPage, this.type);
+    this.navCtrl.setRoot(TrainingPage, this.type, {animate: true, direction: 'forward'});
   }
 
   home() {
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
   }
 
 

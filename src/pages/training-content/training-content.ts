@@ -31,7 +31,50 @@ export class TrainingContentPage {
         title: 'Lesson 1',
         url: 'https://www.youtube.com/embed/xMrjiGDefXY',
         urlid: 'xMrjiGDefXY',
-        desc: ''
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Taking responsibility',
+        url: 'https://www.youtube.com/embed/Ltkmd0KZA8c',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Facts vs Opinion',
+        url: 'https://www.youtube.com/embed/QYSBsv20R2c',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Active listinig',
+        url: 'https://www.youtube.com/embed/aUgzw2xgMe8',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Choose your words',
+        url: 'https://www.youtube.com/embed/3nOSQ2ih3do',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Be flexible',
+        url: 'https://www.youtube.com/embed/39NZrHGvl5I',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
+      },
+      {
+        title: 'Stand out at first Glance',
+        url: 'https://www.youtube.com/embed/OoWBlnVf2B0',
+        urlid: 'xMrjiGDefXY',
+        desc: '',
+        icon: ''
       },
     ];
 
@@ -40,21 +83,25 @@ export class TrainingContentPage {
         title: 'quiz 1',
         desc: '',
         progress: '',
+        icon: ''
       },  
       {
-        title: 'quiz 2',
+        title: 'Basic test',
         desc: '',
         progress: '',
+        icon: ''
       },  
       {
-        title: 'quiz 3',
+        title: 'Comunication skill test',
         desc: '',
         progress: '',
+        icon: ''
       },  
       {
-        title: 'quiz 4',
+        title: 'Grammer test',
         desc: '',
         progress: '',
+        icon: ''
       },
     ];
     
@@ -68,6 +115,13 @@ export class TrainingContentPage {
 
   goQuiz(data: {title: string, desc: string, progress: string,}) {
     this.navCtrl.push(QuizPage, data);
+  }
+
+  letter(word: string) {
+    var str     = word;
+    var matches = str.match(/\b(\w)/g);              // ['J','S','O','N']
+    var acronym = matches[0];  
+    return acronym;
   }
 
 }

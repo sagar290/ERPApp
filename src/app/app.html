@@ -1,17 +1,19 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title style="color: white;">Menu</ion-title>
+    <ion-toolbar text-center>
+        <img style="width: 100px;" src="assets/imgs/ulogo2.png" alt="">
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
       <button  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+          <img style="width: 30px;" src="{{ p.img }}" alt="">  {{p.title}}
       </button>
     </ion-list>
+    
+    
   </ion-content>
-
+  <!-- <img src="assets/imgs/UBL-Logo.png" alt=""> -->
 </ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

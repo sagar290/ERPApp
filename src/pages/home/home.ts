@@ -27,15 +27,15 @@ export class HomePage {
   }
 
   dashBoard() {
-    this.navCtrl.push(DashBoardPage, this.token);
+    this.navCtrl.setRoot(DashBoardPage, this.token,  {animate: true, direction: 'forward'});
   }
 
   training() {
-    this.navCtrl.push(TrainingPage, this.token);
+    this.navCtrl.setRoot(TrainingPage, this.token,  {animate: true, direction: 'forward'});
   }
 
   archive() {
-    this.navCtrl.push(ArchivePage, this.token);
+    this.navCtrl.setRoot(ArchivePage, this.token,  {animate: true, direction: 'back'});
   }
 
 

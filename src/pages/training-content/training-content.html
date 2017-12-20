@@ -28,9 +28,9 @@
     <ion-list>
       <div *ngFor="let lesson of lessons  let i = index "  [attr.data-index]="i" >
         <ion-item id="liked" (click)="videoId(lesson.url, $event)" >
-          <ion-thumbnail item-start>
-            <img src="assets/imgs/play.png">
-          </ion-thumbnail>
+            <ion-avatar item-start>
+                <ion-text-avatar color="primary">{{ letter(lesson.title) }}</ion-text-avatar>
+            </ion-avatar>
           <h2> {{ lesson.title }} </h2>
         </ion-item>
       </div>
@@ -41,10 +41,10 @@
   <ion-list *ngSwitchCase="'quizzes'" >
       <ion-list>
         <div *ngFor="let quiz of quizlist  let i = index "  [attr.data-index]="i" >
-          <ion-item (click)="goQuiz(quiz)" >
-            <ion-thumbnail item-start>
-              <img src="assets/imgs/quiz.png">
-            </ion-thumbnail>
+          <ion-item id="liked" (click)="goQuiz(quiz)" >
+              <ion-avatar item-start>
+                  <ion-text-avatar color="danger">{{ letter(quiz.title) }}</ion-text-avatar>
+              </ion-avatar>
             <h2> {{ quiz.title }} </h2>
           </ion-item>
         </div>

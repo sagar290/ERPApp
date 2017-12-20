@@ -1,6 +1,8 @@
 page-home {
-    .card {
-        border: 1px solid #bab3fd;
-        border-radius: 10px;
+    .card ion-item, .card ion-item ion-label h1{
+        
+        background: #0f7ec2;
+        color: white;
+
     }
 }

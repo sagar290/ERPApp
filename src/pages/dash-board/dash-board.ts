@@ -7,6 +7,7 @@ import { TrainingPage } from '../training/training';
 import { ArchivePage } from '../archive/archive';
 import { HomePage } from '../home/home';
 
+
 @IonicPage()
 @Component({
   selector: 'page-dash-board',
@@ -29,7 +30,8 @@ export class DashBoardPage {
           edUrl: 'https://h5p.org/h5p/embed/151930',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'S',
+          thumbnail: 'https://material.io/icons/static/images/icons-180x180.png'
         },
         {
           title: 'Smart Book 2',
@@ -38,7 +40,8 @@ export class DashBoardPage {
           edUrl: 'https://h5p.org/h5p/embed/151929',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'S',
+          thumbnail: 'https://lh3.googleusercontent.com/oKsgcsHtHu_nIkpNd-mNCAyzUD8xo68laRPOfvFuO0hqv6nDXVNNjEMmoiv9tIDgTj8=w170'
         },
         {
           title: 'Brand Relaunch. What are all the considerations?',
@@ -47,6 +50,7 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
+          letter: 'B',
           thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
         },
         {
@@ -56,7 +60,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'T',
+          thumbnail: 'https://www.practicepanther.com/wp-content/uploads/2014/11/Top-Five-Legal-Webinars-You-MUST-Watch-1-400x400.png'
         },
         {
           title: 'Planning is important',
@@ -65,7 +70,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'P',
+          thumbnail: 'http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-check-icon.png'
         },
         {
           title: 'Symbolism is key',
@@ -74,7 +80,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'S',
+          thumbnail: 'https://lh3.googleusercontent.com/ez8pDFoxU2ZqDmyfeIjIba6dWisd8MY_6choHhZNpO0WwLhICu0v0s5eV2WHOhuhKw=w170'
         },
         {
           title: 'Brand Anthropologists',
@@ -83,7 +90,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'B',
+          thumbnail: 'https://lh3.googleusercontent.com/UMB2HRRRAAzXAEaCM9Gg-baCaDx_1RTXHscW5k2Ge3P4KP4mwTt2m6oyEHBWex3c4SxU=w300'
         },
         {
           title: 'Brand Relaunch requires an outside-in focus',
@@ -92,7 +100,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'B',
+          thumbnail: 'https://lh3.googleusercontent.com/krl72AYWGWgmhSCcdlHm-IgwkOBfdq6qVFIJtHxhfoSlMcrIgKdVhK-l-o800kv0m7uO=w300'
         },
         {
           title: 'What needs to change?',
@@ -101,7 +110,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'W',
+          thumbnail: 'https://lh3.googleusercontent.com/7hMo86cz5QoXCVsU1H02_7k64rDlYs3A5QQTSwllMxlY3My6srj9VZMXwWi6-sHIHQ=w300'
         },
         {
           title: 'Change the Logo',
@@ -110,6 +120,7 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
+          letter: 'C',
           thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
         },
         {
@@ -119,7 +130,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'M',
+          thumbnail: 'https://lh3.googleusercontent.com/7hMo86cz5QoXCVsU1H02_7k64rDlYs3A5QQTSwllMxlY3My6srj9VZMXwWi6-sHIHQ=w300'
         },
         {
           title: 'When is the time right to relaunch your brand?',
@@ -128,7 +140,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'W',
+          thumbnail: 'https://image.flaticon.com/teams/slug/freepik.jpg'
         }
       ];
     } else {
@@ -140,7 +153,8 @@ export class DashBoardPage {
           edUrl: 'https://h5p.org/h5p/embed/151930',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'S',
+          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Book-icon-orange.png'
         },
         {
           title: 'Warehouse Management Policy and Procedures Guideline Outline',
@@ -149,7 +163,8 @@ export class DashBoardPage {
           edUrl: '',
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          letter: 'W',
+          thumbnail: 'http://simpleicon.com/wp-content/uploads/cute.png'
         },
       ]; 
     }
@@ -167,15 +182,22 @@ export class DashBoardPage {
 
 
   training() {
-    this.navCtrl.push(TrainingPage, this.type);
+    this.navCtrl.setRoot(TrainingPage, this.type, {animate: true, direction: 'forward'});
   }
 
   archive() {
-    this.navCtrl.push(ArchivePage, this.type);
+    this.navCtrl.setRoot(ArchivePage, this.type, {animate: true, direction: 'forward'});
   }
 
   home() {
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
+  }
+
+  letter(word: string) {
+    var str     = word;
+    var matches = str.match(/\b(\w)/g);              // ['J','S','O','N']
+    var acronym = matches[0];  
+    return acronym;
   }
 
 }

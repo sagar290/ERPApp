@@ -38,9 +38,9 @@
     <ion-list *ngSwitchCase="'innovation'" >
       <ion-list>
         <ion-item>
-          <ion-avatar item-start>
-            <img src="https://api.adorable.io/avatars/121/abott@adorable.png">
-          </ion-avatar>
+            <ion-avatar item-start>
+                <ion-text-avatar color="secondary">{{ letter("Hayao Miyazaki 1") }}</ion-text-avatar>
+            </ion-avatar>
           <h2>Hayao Miyazaki 1</h2>
           <p>My Neighbor Totoro</p>
           <button ion-button clear item-end>
@@ -55,8 +55,9 @@
         <div *ngFor="let item of items  let i = index "  [attr.data-index]="i">
           <ion-item (click)="content(item)" >
               <ion-avatar item-start>
-                <img src="{{item.thumbnail}}">
+                  <ion-text-avatar color="secondary">{{ letter(item.title) }}</ion-text-avatar>
               </ion-avatar>
+              
               <h2>{{ item.title }}</h2>
               <p>{{ item.region }}</p>
               <button ion-button clear item-end>

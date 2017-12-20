@@ -45,15 +45,22 @@ export class TrainingPage {
   }
 
   dashBoard() {
-    this.navCtrl.push(DashBoardPage, this.type);
+    this.navCtrl.setRoot(DashBoardPage, this.type, {animate: true, direction: 'forward'});
   }
 
 
 
   archive() {
-    this.navCtrl.push(ArchivePage, this.type);
+    this.navCtrl.setRoot(ArchivePage, this.type, {animate: true, direction: 'forward'});
   }
   home() {
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
+  }
+
+  letter(word: string) {
+    var str     = word;
+    var matches = str.match(/\b(\w)/g);              // ['J','S','O','N']
+    var acronym = matches[0];  
+    return acronym;
   }
 }

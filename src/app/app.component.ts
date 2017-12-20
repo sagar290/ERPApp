@@ -20,7 +20,7 @@ import { ArchivePage } from '../pages/archive/archive';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage:any = LandPage;
-  pages: Array<{title: string, component: any}>;
+  pages: any;
   isLogIn: boolean;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, httMudule: HttpModule,public menuCtrl: MenuController, private storage: Storage) {
     
@@ -41,15 +41,31 @@ export class MyApp {
     
 
     this.pages = [
-      {title: 'Dash Board', component: DashBoardPage},
-      {title: 'Trainning', component: TrainingPage},
-      {title: 'Archive', component: ArchivePage},
-      {title: 'Logout', component: null},
+      {
+        title: 'Dash Board', 
+        component: DashBoardPage,
+        img: 'assets/imgs/das-menu.png'
+      },
+      {
+        title: 'Trainning', 
+        component: TrainingPage,
+        img: 'assets/imgs/training-menu.png'
+      },
+      {
+        title: 'Archive', 
+        component: ArchivePage,
+        img: 'assets/imgs/archive-menu.png'
+      },
+      {
+        title: 'Logout', 
+        component: null,
+        img: 'assets/imgs/logout.png'
+      },
       
     ];
   }
 
-  openPage(page) {
+openPage(page) {
     if(page.component) {
         this.nav.push(page.component);
     } else {
