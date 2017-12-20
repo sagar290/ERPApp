@@ -49,7 +49,7 @@ export class TrainingContentPage {
         icon: ''
       },
       {
-        title: 'Active listinig',
+        title: 'Active listening',
         url: 'https://www.youtube.com/embed/aUgzw2xgMe8',
         urlid: 'xMrjiGDefXY',
         desc: '',

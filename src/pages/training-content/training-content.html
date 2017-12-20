@@ -29,7 +29,7 @@
       <div *ngFor="let lesson of lessons  let i = index "  [attr.data-index]="i" >
         <ion-item id="liked" (click)="videoId(lesson.url, $event)" >
             <ion-avatar item-start>
-                <ion-text-avatar color="primary">{{ letter(lesson.title) }}</ion-text-avatar>
+                <ion-text-avatar color="{{ letter(lesson.title) }}">{{ letter(lesson.title) }}</ion-text-avatar>
             </ion-avatar>
           <h2> {{ lesson.title }} </h2>
         </ion-item>
@@ -43,7 +43,7 @@
         <div *ngFor="let quiz of quizlist  let i = index "  [attr.data-index]="i" >
           <ion-item id="liked" (click)="goQuiz(quiz)" >
               <ion-avatar item-start>
-                  <ion-text-avatar color="danger">{{ letter(quiz.title) }}</ion-text-avatar>
+                  <ion-text-avatar color="{{ letter(quiz.title) }}">{{ letter(quiz.title) }}</ion-text-avatar>
               </ion-avatar>
             <h2> {{ quiz.title }} </h2>
           </ion-item>

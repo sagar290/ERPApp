@@ -55,7 +55,7 @@
         <div *ngFor="let item of items  let i = index "  [attr.data-index]="i">
           <ion-item (click)="content(item)" >
               <ion-avatar item-start>
-                  <ion-text-avatar color="secondary">{{ letter(item.title) }}</ion-text-avatar>
+                  <ion-text-avatar color="{{ letter(item.title) }}">{{ letter(item.title) }}</ion-text-avatar>
               </ion-avatar>
               
               <h2>{{ item.title }}</h2>
