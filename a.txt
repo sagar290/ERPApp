@@ -1,0 +1,3 @@
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore UBL_TM android-release-unsigned.apk 10ms
+
+10minuteschool

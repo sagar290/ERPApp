@@ -54,7 +54,10 @@
       <ion-list >
         <div *ngFor="let item of items  let i = index "  [attr.data-index]="i">
           <ion-item (click)="content(item)" >
-              <ion-avatar item-start>
+              <ion-avatar *ngIf="item.thumbnail !== ''" item-start>
+                  <img src="{{ item.thumbnail }}" alt="">
+              </ion-avatar>
+              <ion-avatar *ngIf="item.thumbnail == ''"  item-start>
                   <ion-text-avatar color="{{ letter(item.title) }}">{{ letter(item.title) }}</ion-text-avatar>
               </ion-avatar>
               

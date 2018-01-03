@@ -31,7 +31,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'S',
-          thumbnail: 'https://material.io/icons/static/images/icons-180x180.png'
+          thumbnail: ''
         },
         {
           title: 'Smart Book 2',
@@ -41,7 +41,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'S',
-          thumbnail: 'https://lh3.googleusercontent.com/oKsgcsHtHu_nIkpNd-mNCAyzUD8xo68laRPOfvFuO0hqv6nDXVNNjEMmoiv9tIDgTj8=w170'
+          thumbnail: ''
         },
         {
           title: 'Brand Relaunch. What are all the considerations?',
@@ -51,7 +51,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'B',
-          thumbnail: 'https://api.adorable.io/avatars/121/abott@adorable.png'
+          thumbnail: ''
         },
         {
           title: 'Top four reasons to consider a brand relaunch',
@@ -91,7 +91,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'B',
-          thumbnail: 'https://lh3.googleusercontent.com/UMB2HRRRAAzXAEaCM9Gg-baCaDx_1RTXHscW5k2Ge3P4KP4mwTt2m6oyEHBWex3c4SxU=w300'
+          thumbnail: ''
         },
         {
           title: 'Brand Relaunch requires an outside-in focus',
@@ -111,7 +111,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'W',
-          thumbnail: 'https://lh3.googleusercontent.com/7hMo86cz5QoXCVsU1H02_7k64rDlYs3A5QQTSwllMxlY3My6srj9VZMXwWi6-sHIHQ=w300'
+          thumbnail: ''
         },
         {
           title: 'Change the Logo',
@@ -164,7 +164,7 @@ export class DashBoardPage {
           region: 'UBL Chittagong',
           date: '22 Dec 2017',
           letter: 'W',
-          thumbnail: 'http://simpleicon.com/wp-content/uploads/cute.png'
+          thumbnail: ''
         },
       ]; 
     }
